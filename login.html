@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/login.css">
+
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="Imagens/cadastrosvg.svg">
+        </div>
+        <div class="form">
+            <form action="testlogin.php" method="POST">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Login</h1>
+                    </div>
+                </div>
+                <div class="input-group">
+
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input id="email" type="text" name="email" placeholder="Digite seu email" required>
+
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="senha" placeholder="Digite sua senha" required>
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <input type="submit" name="submit" value="Entrar">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

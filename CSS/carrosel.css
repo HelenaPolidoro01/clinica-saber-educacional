@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.carrosel {
+    width: 600px;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 50px auto;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0, 7);
+}
+
+@media (min-width:2800px) {
+    .carrosel {
+        position: absolute;
+        float: left;
+        left: 300px;
+        width: 1000px;
+        height: 1000px;
+    }
+}
+
+.carrosel img {
+    width: 600px;
+}
+
+@media (min-width:2800px) {
+    .carrosel img {
+        width: 1000px;
+    }
+}
+
+.carrosel ul {
+    display: flex;
+    list-style: none;
+    width: 1200px;
+    height: 400px;
+}
+
+.carrosel li {
+    position: relative;
+    animation: slide 15s infinite ease-out;
+}
+
+@keyframes slide {
+    0% {
+        left: 0px
+    }
+    20% {
+        left: 0px
+    }
+    30% {
+        left: -600px
+    }
+    50% {
+        left: -600px
+    }
+    60% {
+        left: -1200px
+    }
+    90% {
+        left: -1200px
+    }
+    100% {
+        left: 0px
+    }
+}
+
+@media (min-width:2800px) {
+    @keyframes slide {
+        0% {
+            left: 0px
+        }
+        20% {
+            left: 0px
+        }
+        30% {
+            left: -1000px
+        }
+        50% {
+            left: -1000px
+        }
+        60% {
+            left: -2000px
+        }
+        90% {
+            left: -2000px
+        }
+        100% {
+            left: 0px
+        }
+    }
+}
+
+/* foto carrosel */
+
+.principal {
+    width: 1000px;
+    height: 500px;
+    border-radius: 8px;
+    border: 1px rgb(200, 200, 200) solid;
+    position: relative;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.principal:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.principal:hover {
+    transform: scale(1.02, 1.02);
+}
+
+.principal:hover:after {
+    opacity: 1;
+}
+
+
+/*foto carrosel*/
